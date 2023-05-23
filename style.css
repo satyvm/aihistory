@@ -147,8 +147,8 @@ p.quote{
         text-decoration-color: white;
       }
       100% {
-        color: rgb(23, 98, 239);
-        text-decoration-color: rgb(23, 98, 239);
+        color: #F81CE5;
+        text-decoration-color: #F81CE5;
       }
 }
 
@@ -156,7 +156,7 @@ p.quote{
     animation-name: highlightAnimation;
     animation-duration: 0.7s;
     animation-iteration-count: forwards;
-    color: rgb(23, 98, 239);
+    color: #F81CE5;
     /* text-decoration: underline; */
-    text-decoration-color: rgb(23, 98, 239);
+    text-decoration-color: #F81CE5;
 }
