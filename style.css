@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex&family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital@0;1&display=swap');
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #FFF;
+    background: #F81CE5;
+  }
+  
+  ::selection {
+    color: #FFF;
+    background: #F81CE5;
+  }
+
+/* nav part starts */
+.nav_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+}
+
+.nav_link{
+    font-size: 15px;
+}
+
+.nav_title{
+    font-size: 18px;
+    font-family: 'Caudex', serif;
+}
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+/* nav part ends */
+
+
+/* main body starts */
+div.body_blog{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+div.body_head{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30vh;
+}
+
+p#random_letters_1{
+    margin-block: 0;
+}
+
+p#random_letters_2{
+    margin-block: 0;
+}
+
+div.body_title_1{
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+div.body_title_2{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+div.body_text{
+    width: 60vw;
+    margin-top: 3vw;
+}
+
+p.quote{
+    padding: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+.sub-heading{
+    margin-bottom: 0;
+}
+
+.text_hover {
+    position: relative;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+.image_hover {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    /* transform: translate(-50%, -50%); */
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    width: 40%;
+}
+
+.text_hover:hover + .image_hover {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.right {
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.left{
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.toBib{
+    transition : background-color 1s;
+}
+
+.linkedBib{
+    text-decoration: underline;
+}
+
+@keyframes highlightAnimation{
+    0% {
+        color: black;
+        text-decoration-color: black;
+      }
+      50% {
+        color: white;
+        text-decoration-color: white;
+      }
+      100% {
+        color: rgb(23, 98, 239);
+        text-decoration-color: rgb(23, 98, 239);
+      }
+}
+
+.highlightClass{
+    animation-name: highlightAnimation;
+    animation-duration: 0.7s;
+    animation-iteration-count: forwards;
+    color: rgb(23, 98, 239);
+    /* text-decoration: underline; */
+    text-decoration-color: rgb(23, 98, 239);
+}
