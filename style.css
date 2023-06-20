@@ -8,12 +8,12 @@ body {
 ::-moz-selection { /* Code for Firefox */
     color: #FFF;
     background: #F81CE5;
-  }
-  
-  ::selection {
+}
+
+::selection {
     color: #FFF;
     background: #F81CE5;
-  }
+}
 
 /* nav part starts */
 .nav_bar{
@@ -99,6 +99,7 @@ p.quote{
     cursor: pointer;
     font-family: 'Playfair Display', serif;
     font-style: italic;
+    color: #F81CE5;
 }
 
 .image_hover {
@@ -117,6 +118,10 @@ p.quote{
     transition: all 0.3s ease-in-out;
 }
 
+.text_hover:hover{
+    color: #DA07C8;
+}
+
 .right {
     top: 50%;
     left: 75%;
@@ -127,6 +132,14 @@ p.quote{
     top: 50%;
     left: 25%;
     transform: translate(-50%, -50%);
+}
+
+.bib{
+    color: #1F38E0;
+}
+
+.bib:hover{
+    color: #1233ED;
 }
 
 .toBib{
@@ -147,8 +160,8 @@ p.quote{
         text-decoration-color: white;
       }
       100% {
-        color: #F81CE5;
-        text-decoration-color: #F81CE5;
+        color: #1F38E0;
+        text-decoration-color: #1F38E0;
       }
 }
 
@@ -156,7 +169,7 @@ p.quote{
     animation-name: highlightAnimation;
     animation-duration: 0.7s;
     animation-iteration-count: forwards;
-    color: #F81CE5;
+    color: #1F38E0;
     /* text-decoration: underline; */
-    text-decoration-color: #F81CE5;
+    text-decoration-color: #1F38E0;
 }
